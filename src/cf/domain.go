@@ -108,6 +108,10 @@ func NewAppParams(appValues generic.Map) (params AppParams) {
 	return
 }
 
+func NewEmptyAppParams() AppParams {
+	return NewAppParams(generic.NewEmptyMap())
+}
+
 type AppSet []AppParams
 
 func NewEmptyAppSet() AppSet {
@@ -121,10 +125,6 @@ func NewAppSet(apps interface{}) (set AppSet) {
 		set = append(set, NewAppParams(app))
 	}
 	return
-}
-
-func NewEmptyAppParams() AppParams {
-	return NewAppParams(generic.NewEmptyMap())
 }
 
 type AppFileFields struct {
