@@ -24,5 +24,5 @@ func TestParsingApplicationName(t *testing.T) {
 	manifest, err := parser.Parse(strings.NewReader(simple_manifest))
 
 	assert.NoError(t, err)
-	assert.Equal(t, "my-app", manifest.Applications[0].Name())
+	assert.Equal(t, "my-app", manifest.Applications[0].Get("name").(string))
 }
