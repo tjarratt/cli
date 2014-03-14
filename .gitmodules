@@ -4,9 +4,6 @@
 [submodule "src/code.google.com/p/gogoprotobuf"]
 	path = src/code.google.com/p/gogoprotobuf
 	url = https://code.google.com/p/gogoprotobuf/
-[submodule "src/github.com/tjarratt/cli"]
-	path = src/github.com/codegangsta/cli
-	url = https://github.com/tjarratt/cli.git
 [submodule "src/github.com/onsi/ginkgo"]
 	path = src/github.com/onsi/ginkgo
 	url = https://github.com/onsi/ginkgo
