@@ -9,7 +9,7 @@ import (
 	"cf/requirements"
 	"cf/terminal"
 	"errors"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 )
 
 const AppAlreadyBoundErrorCode = "90003"

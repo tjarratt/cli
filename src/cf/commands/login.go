@@ -6,7 +6,7 @@ import (
 	"cf/models"
 	"cf/requirements"
 	"cf/terminal"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"strconv"
 )
 

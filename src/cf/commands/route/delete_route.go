@@ -6,7 +6,7 @@ import (
 	"cf/errors"
 	"cf/requirements"
 	"cf/terminal"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 )
 
 type DeleteRoute struct {

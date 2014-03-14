@@ -2,7 +2,7 @@ package commands
 
 import (
 	"cf/commands"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	testreq "testhelpers/requirements"
 	testterm "testhelpers/terminal"
 )

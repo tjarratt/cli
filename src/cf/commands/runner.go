@@ -4,7 +4,7 @@ import (
 	"cf/requirements"
 	"errors"
 	"fmt"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"os"
 )
 

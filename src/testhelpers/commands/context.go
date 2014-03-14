@@ -5,7 +5,7 @@ import (
 	"cf/commands"
 	"flag"
 	"fmt"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"strings"
 	testreq "testhelpers/requirements"
 )

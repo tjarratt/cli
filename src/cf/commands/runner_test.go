@@ -3,9 +3,9 @@ package commands_test
 import (
 	. "cf/commands"
 	"cf/requirements"
-	"github.com/codegangsta/cli"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/tjarratt/cli"
 	testcmd "testhelpers/commands"
 )
 

@@ -7,7 +7,7 @@ import (
 	"cf/terminal"
 	"cf/trace"
 	"errors"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"strings"
 )
 

@@ -7,7 +7,7 @@ import (
 	"cf/requirements"
 	"cf/terminal"
 	"errors"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 )
 
 var spaceRoles = []string{models.SPACE_MANAGER, models.SPACE_DEVELOPER, models.SPACE_AUDITOR}

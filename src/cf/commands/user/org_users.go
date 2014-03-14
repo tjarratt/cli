@@ -7,7 +7,7 @@ import (
 	"cf/requirements"
 	"cf/terminal"
 	"errors"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 )
 
 var orgRoles = []string{models.ORG_MANAGER, models.BILLING_MANAGER, models.ORG_AUDITOR}

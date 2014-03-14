@@ -13,3 +13,6 @@
 [submodule "src/github.com/fraenkel/candiedyaml"]
 	path = src/github.com/fraenkel/candiedyaml
 	url = https://github.com/fraenkel/candiedyaml.git
+[submodule "src/github.com/tjarratt/cli"]
+	path = src/github.com/tjarratt/cli
+	url = https://github.com/tjarratt/cli-1.git

@@ -6,7 +6,7 @@ import (
 	"cf/terminal"
 	"cf/trace"
 	"fmt"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"os/exec"
 )
 

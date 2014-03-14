@@ -8,7 +8,7 @@ import (
 	"cf/terminal"
 	"encoding/json"
 	"errors"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 )
 
 type UpdateUserProvidedService struct {

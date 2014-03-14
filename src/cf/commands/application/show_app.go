@@ -10,7 +10,7 @@ import (
 	"cf/terminal"
 	"errors"
 	"fmt"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"strings"
 )
 

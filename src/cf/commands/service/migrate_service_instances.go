@@ -7,7 +7,7 @@ import (
 	"cf/requirements"
 	"cf/terminal"
 	"fmt"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 )
 
 type MigrateServiceInstances struct {

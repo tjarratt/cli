@@ -10,7 +10,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"os"
 	"strconv"
 	"strings"

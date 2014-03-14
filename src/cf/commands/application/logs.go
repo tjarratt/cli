@@ -8,7 +8,7 @@ import (
 	"cf/requirements"
 	"cf/terminal"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"time"
 )
 

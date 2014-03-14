@@ -4,7 +4,7 @@ import (
 	"cf/configuration"
 	term "cf/terminal"
 	"fmt"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"strings"
 	"time"
 )

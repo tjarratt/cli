@@ -2,7 +2,7 @@ package app
 
 import (
 	"fmt"
-	"github.com/codegangsta/cli"
+	"github.com/tjarratt/cli"
 	"strings"
 )
 
