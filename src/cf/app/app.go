@@ -5,7 +5,6 @@ import (
 	"cf/commands"
 	"cf/terminal"
 	"cf/trace"
-	"errors"
 	"fmt"
 	"github.com/tjarratt/cli"
 	"os"
@@ -44,7 +43,8 @@ func NewApp(cmdRunner commands.Runner) (app *cli.App, err error) {
 		_, err := os.Stat(pathToPlugin)
 
 		if err != nil {
-			err = errors.New(fmt.Sprintf("couldn't find plugin", pluginName))
+			println(fmt.Sprintf("FAILED: no such command '%s'", args.First()))
+			os.Exit(1)
 			return
 		} else {
 			newArgs := args[1:]
