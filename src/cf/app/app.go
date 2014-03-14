@@ -52,6 +52,8 @@ func NewApp(cmdRunner commands.Runner) (app *cli.App, err error) {
 			cmd := exec.Command(pathToPlugin, newArgs...)
 			cmd.Stdout = os.Stdout
 			cmd.Stderr = os.Stderr
+			cmd.Stdin = os.Stdin
+
 			err := cmd.Start()
 			if err != nil {
 				println("error starting plugin: ", err.Error())
