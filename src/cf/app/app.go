@@ -5,8 +5,10 @@ import (
 	"cf/commands"
 	"cf/terminal"
 	"cf/trace"
+	"errors"
 	"fmt"
 	"github.com/tjarratt/cli"
+	"os"
 	"os/exec"
 )
 
@@ -38,15 +40,23 @@ func NewApp(cmdRunner commands.Runner) (app *cli.App, err error) {
 		args := context.Args()
 
 		pluginName := fmt.Sprintf("cf-%s", args.First())
-		_, lookPathError := exec.LookPath(pluginName)
-		if lookPathError != nil {
-			println("couldn't find plugin", pluginName)
+		pathToPlugin := fmt.Sprintf("%s/.cf-plugins/%s", os.Getenv("HOME"), pluginName)
+		_, err := os.Stat(pathToPlugin)
+
+		if err != nil {
+			err = errors.New(fmt.Sprintf("couldn't find plugin", pluginName))
+			return
 		} else {
 			newArgs := args[1:]
 
-			cmd := exec.Command(pluginName, newArgs...)
-			output, _ := cmd.CombinedOutput()
-			println(string(output))
+			cmd := exec.Command(pathToPlugin, newArgs...)
+			cmd.Stdout = os.Stdout
+			cmd.Stderr = os.Stderr
+			err := cmd.Start()
+			if err != nil {
+				println("error starting plugin: ", err.Error())
+			}
+			cmd.Wait()
 		}
 	}
 
