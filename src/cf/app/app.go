@@ -7,6 +7,7 @@ import (
 	"cf/trace"
 	"fmt"
 	"github.com/codegangsta/cli"
+	"os/exec"
 )
 
 func NewApp(cmdRunner commands.Runner) (app *cli.App, err error) {
@@ -33,6 +34,22 @@ func NewApp(cmdRunner commands.Runner) (app *cli.App, err error) {
 	app.Usage = cf.Usage
 	app.Version = cf.Version
 	app.Action = helpCommand.Action
+	app.UnknownCommandCalled = func(context *cli.Context) {
+		args := context.Args()
+
+		pluginName := fmt.Sprintf("cf-%s", args.First())
+		_, lookPathError := exec.LookPath(pluginName)
+		if lookPathError != nil {
+			println("couldn't find plugin", pluginName)
+		} else {
+			newArgs := args[1:]
+
+			cmd := exec.Command(pluginName, newArgs...)
+			output, _ := cmd.CombinedOutput()
+			println(string(output))
+		}
+	}
+
 	app.Commands = []cli.Command{
 		helpCommand,
 		{
