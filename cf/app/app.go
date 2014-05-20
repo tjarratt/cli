@@ -100,9 +100,13 @@ func NewApp(cmdRunner command_runner.Runner, metadatas ...command_metadata.Comma
 		unknownCommandName := args[0]
 
 		if unknownCommandName == "halp" {
-			// count := len(args)-1
-			// newArgs = append(newArgs, args[1...count]...))
-			app.Run([]string{"fakery", "help", "help"})
+			newArgs := []string{"great-scott-cf!", "help"}
+			count := len(args)
+			if count > 0 {
+				newArgs = append(newArgs, args[1:count]...)
+			}
+
+			app.Run(newArgs)
 		}
 	}
 

@@ -111,6 +111,7 @@ var _ = Describe("App", func() {
 type FakeRunner struct {
 	cmdFactory command_factory.Factory
 	cmdName    string
+	cmdArgs    []string
 }
 
 func (runner *FakeRunner) RunCmdByName(cmdName string, c *cli.Context) (err error) {
@@ -120,5 +121,6 @@ func (runner *FakeRunner) RunCmdByName(cmdName string, c *cli.Context) (err erro
 		return
 	}
 	runner.cmdName = cmdName
+	runner.cmdArgs = c.Args()
 	return
 }
