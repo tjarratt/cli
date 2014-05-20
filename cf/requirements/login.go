@@ -1,8 +1,8 @@
 package requirements
 
 import (
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/terminal"
 )
 
 type LoginRequirement struct {

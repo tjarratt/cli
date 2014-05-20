@@ -1,10 +1,10 @@
 package api
 
 import (
-	"github.com/cloudfoundry/cli/cf/api/resources"
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/generic"
+	"github.com/tjarratt/cli/cf/api/resources"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/generic"
 )
 
 type FakeServiceRepo struct {

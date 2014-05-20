@@ -1,8 +1,8 @@
 package requirements
 
 import (
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/cf/requirements"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/cf/requirements"
 )
 
 type FakeReqFactory struct {

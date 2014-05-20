@@ -1,7 +1,7 @@
 package i18n_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/i18n"
+	"github.com/tjarratt/cli/cf/i18n"
 	"os"
 	"path/filepath"
 

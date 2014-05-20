@@ -2,7 +2,7 @@ package matchers
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/onsi/gomega"
 	"strings"
 )

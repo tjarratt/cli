@@ -9,17 +9,17 @@ import (
 
 	"github.com/codegangsta/cli"
 
-	"github.com/cloudfoundry/cli/cf"
-	"github.com/cloudfoundry/cli/cf/api"
-	"github.com/cloudfoundry/cli/cf/app"
-	"github.com/cloudfoundry/cli/cf/command_factory"
-	"github.com/cloudfoundry/cli/cf/command_runner"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/manifest"
-	"github.com/cloudfoundry/cli/cf/net"
-	"github.com/cloudfoundry/cli/cf/requirements"
-	"github.com/cloudfoundry/cli/cf/terminal"
-	"github.com/cloudfoundry/cli/cf/trace"
+	"github.com/tjarratt/cli/cf"
+	"github.com/tjarratt/cli/cf/api"
+	"github.com/tjarratt/cli/cf/app"
+	"github.com/tjarratt/cli/cf/command_factory"
+	"github.com/tjarratt/cli/cf/command_runner"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/manifest"
+	"github.com/tjarratt/cli/cf/net"
+	"github.com/tjarratt/cli/cf/requirements"
+	"github.com/tjarratt/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf/trace"
 )
 
 type cliDependencies struct {
@@ -152,7 +152,7 @@ func displayCrashDialog(errorMessage string) {
 Aww shucks.
 
 Something completely unexpected happened. This is a bug in %s.
-Please file this bug : https://github.com/cloudfoundry/cli/issues
+Please file this bug : https://github.com/tjarratt/cli/issues
 Tell us that you ran this command:
 
 	%s

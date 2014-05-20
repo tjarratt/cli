@@ -2,10 +2,10 @@ package net_test
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/errors"
-	. "github.com/cloudfoundry/cli/cf/net"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/errors"
+	. "github.com/tjarratt/cli/cf/net"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"net/http"

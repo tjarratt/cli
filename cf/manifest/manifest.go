@@ -2,11 +2,11 @@ package manifest
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/formatters"
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/generic"
-	"github.com/cloudfoundry/cli/words"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/formatters"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/generic"
+	"github.com/tjarratt/cli/words"
 	"path/filepath"
 	"regexp"
 	"strconv"

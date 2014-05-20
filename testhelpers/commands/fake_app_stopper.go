@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/cloudfoundry/cli/cf/models"
+	"github.com/tjarratt/cli/cf/models"
 )
 
 type FakeAppStopper struct {

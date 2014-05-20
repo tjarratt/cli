@@ -6,15 +6,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/cf/net"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testnet "github.com/cloudfoundry/cli/testhelpers/net"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/cf/net"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testnet "github.com/tjarratt/cli/testhelpers/net"
 
-	. "github.com/cloudfoundry/cli/cf/api"
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/cf/api"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

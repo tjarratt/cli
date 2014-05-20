@@ -1,14 +1,14 @@
 package requirements_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/configuration"
-	. "github.com/cloudfoundry/cli/cf/requirements"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	"github.com/tjarratt/cli/cf/configuration"
+	. "github.com/tjarratt/cli/cf/requirements"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("ApiEndpointRequirement", func() {

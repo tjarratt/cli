@@ -2,9 +2,9 @@ package terminal
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/trace"
+	"github.com/tjarratt/cli/cf"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/trace"
 	"github.com/codegangsta/cli"
 	"io"
 	"os"

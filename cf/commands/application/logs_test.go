@@ -18,8 +18,8 @@
 
    For good examples of writing Ginkgo tests for the cli, refer to
 
-   src/github.com/cloudfoundry/cli/cf/commands/application/delete_app_test.go
-   src/github.com/cloudfoundry/cli/cf/terminal/ui_test.go
+   src/github.com/tjarratt/cli/cf/commands/application/delete_app_test.go
+   src/github.com/tjarratt/cli/cf/terminal/ui_test.go
    src/github.com/cloudfoundry/loggregator_consumer/consumer_test.go
 */
 
@@ -27,22 +27,22 @@ package application_test
 
 import (
 	"code.google.com/p/gogoprotobuf/proto"
-	. "github.com/cloudfoundry/cli/cf/commands/application"
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/cf/terminal"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testcmd "github.com/cloudfoundry/cli/testhelpers/commands"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testlogs "github.com/cloudfoundry/cli/testhelpers/logs"
-	testreq "github.com/cloudfoundry/cli/testhelpers/requirements"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	. "github.com/tjarratt/cli/cf/commands/application"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/cf/terminal"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testcmd "github.com/tjarratt/cli/testhelpers/commands"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testlogs "github.com/tjarratt/cli/testhelpers/logs"
+	testreq "github.com/tjarratt/cli/testhelpers/requirements"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"time"
 
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("logs command", func() {

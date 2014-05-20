@@ -2,11 +2,11 @@ package organization
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf/command_metadata"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/formatters"
-	"github.com/cloudfoundry/cli/cf/requirements"
-	"github.com/cloudfoundry/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf/command_metadata"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/formatters"
+	"github.com/tjarratt/cli/cf/requirements"
+	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/codegangsta/cli"
 	"strings"
 )

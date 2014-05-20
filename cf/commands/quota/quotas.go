@@ -2,15 +2,15 @@ package quota
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf/api"
-	"github.com/cloudfoundry/cli/cf/command_metadata"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/formatters"
-	"github.com/cloudfoundry/cli/cf/requirements"
-	"github.com/cloudfoundry/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf/api"
+	"github.com/tjarratt/cli/cf/command_metadata"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/formatters"
+	"github.com/tjarratt/cli/cf/requirements"
+	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/codegangsta/cli"
 
-	"github.com/cloudfoundry/cli/cf/i18n"
+	"github.com/tjarratt/cli/cf/i18n"
 
 	goi18n "github.com/nicksnyder/go-i18n/i18n"
 )

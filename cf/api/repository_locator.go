@@ -2,10 +2,10 @@ package api
 
 import (
 	"crypto/tls"
-	"github.com/cloudfoundry/cli/cf/api/strategy"
-	"github.com/cloudfoundry/cli/cf/app_files"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/net"
+	"github.com/tjarratt/cli/cf/api/strategy"
+	"github.com/tjarratt/cli/cf/app_files"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/net"
 	consumer "github.com/cloudfoundry/loggregator_consumer"
 )
 

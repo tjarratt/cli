@@ -2,12 +2,12 @@ package api
 
 import (
 	"encoding/json"
-	"github.com/cloudfoundry/cli/cf/api/resources"
-	"github.com/cloudfoundry/cli/cf/api/strategy"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/cf/net"
+	"github.com/tjarratt/cli/cf/api/resources"
+	"github.com/tjarratt/cli/cf/api/strategy"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/cf/net"
 	"strings"
 )
 

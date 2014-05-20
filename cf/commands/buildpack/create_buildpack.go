@@ -1,13 +1,13 @@
 package buildpack
 
 import (
-	"github.com/cloudfoundry/cli/cf"
-	"github.com/cloudfoundry/cli/cf/api"
-	"github.com/cloudfoundry/cli/cf/command_metadata"
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/cf/requirements"
-	"github.com/cloudfoundry/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf"
+	"github.com/tjarratt/cli/cf/api"
+	"github.com/tjarratt/cli/cf/command_metadata"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/cf/requirements"
+	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/codegangsta/cli"
 	"strconv"
 )

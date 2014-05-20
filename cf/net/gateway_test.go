@@ -18,8 +18,8 @@
 
    For good examples of writing Ginkgo tests for the cli, refer to
 
-   src/github.com/cloudfoundry/cli/cf/commands/application/delete_app_test.go
-   src/github.com/cloudfoundry/cli/cf/terminal/ui_test.go
+   src/github.com/tjarratt/cli/cf/commands/application/delete_app_test.go
+   src/github.com/tjarratt/cli/cf/terminal/ui_test.go
    src/github.com/cloudfoundry/loggregator_consumer/consumer_test.go
 */
 
@@ -28,13 +28,13 @@ package net_test
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/cloudfoundry/cli/cf"
-	"github.com/cloudfoundry/cli/cf/api"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/errors"
-	. "github.com/cloudfoundry/cli/cf/net"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testnet "github.com/cloudfoundry/cli/testhelpers/net"
+	"github.com/tjarratt/cli/cf"
+	"github.com/tjarratt/cli/cf/api"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/errors"
+	. "github.com/tjarratt/cli/cf/net"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testnet "github.com/tjarratt/cli/testhelpers/net"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"io/ioutil"

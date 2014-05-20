@@ -1,6 +1,6 @@
 package api
 
-import "github.com/cloudfoundry/cli/cf/models"
+import "github.com/tjarratt/cli/cf/models"
 
 type FakeServiceSummaryRepo struct {
 	GetSummariesInCurrentSpaceInstances []models.ServiceInstance

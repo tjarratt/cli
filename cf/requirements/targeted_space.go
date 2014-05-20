@@ -2,9 +2,9 @@ package requirements
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/terminal"
 )
 
 type TargetedSpaceRequirement struct {

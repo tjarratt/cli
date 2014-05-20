@@ -1,6 +1,6 @@
 package resources
 
-import "github.com/cloudfoundry/cli/cf/models"
+import "github.com/tjarratt/cli/cf/models"
 
 type SpaceResource struct {
 	Resource

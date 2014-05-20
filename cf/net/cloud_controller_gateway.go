@@ -2,8 +2,8 @@ package net
 
 import (
 	"encoding/json"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/errors"
 	"strconv"
 	"time"
 )

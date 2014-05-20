@@ -18,26 +18,26 @@
 
    For good examples of writing Ginkgo tests for the cli, refer to
 
-   src/github.com/cloudfoundry/cli/cf/commands/application/delete_app_test.go
-   src/github.com/cloudfoundry/cli/cf/terminal/ui_test.go
+   src/github.com/tjarratt/cli/cf/commands/application/delete_app_test.go
+   src/github.com/tjarratt/cli/cf/terminal/ui_test.go
    src/github.com/cloudfoundry/loggregator_consumer/consumer_test.go
 */
 
 package route_test
 
 import (
-	. "github.com/cloudfoundry/cli/cf/commands/route"
-	"github.com/cloudfoundry/cli/cf/models"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testcmd "github.com/cloudfoundry/cli/testhelpers/commands"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testreq "github.com/cloudfoundry/cli/testhelpers/requirements"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	. "github.com/tjarratt/cli/cf/commands/route"
+	"github.com/tjarratt/cli/cf/models"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testcmd "github.com/tjarratt/cli/testhelpers/commands"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testreq "github.com/tjarratt/cli/testhelpers/requirements"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	"github.com/codegangsta/cli"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 func callMapRoute(args []string, requirementsFactory *testreq.FakeReqFactory, routeRepo *testapi.FakeRouteRepository, createRoute *testcmd.FakeRouteCreator) (ui *testterm.FakeUI) {

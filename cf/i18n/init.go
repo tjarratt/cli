@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	resources "github.com/cloudfoundry/cli/cf/resources"
+	resources "github.com/tjarratt/cli/cf/resources"
 
 	go_i18n "github.com/nicksnyder/go-i18n/i18n"
 )

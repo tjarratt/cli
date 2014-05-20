@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/cloudfoundry/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/errors"
 )
 
 type FakeApplicationBitsRepository struct {

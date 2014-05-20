@@ -1,6 +1,6 @@
 package api
 
-import "github.com/cloudfoundry/cli/cf/errors"
+import "github.com/tjarratt/cli/cf/errors"
 
 type FakePasswordRepo struct {
 	Score          string

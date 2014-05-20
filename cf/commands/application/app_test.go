@@ -1,19 +1,19 @@
 package application_test
 
 import (
-	. "github.com/cloudfoundry/cli/cf/commands/application"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/formatters"
-	"github.com/cloudfoundry/cli/cf/models"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testcmd "github.com/cloudfoundry/cli/testhelpers/commands"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testreq "github.com/cloudfoundry/cli/testhelpers/requirements"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
-	testtime "github.com/cloudfoundry/cli/testhelpers/time"
+	. "github.com/tjarratt/cli/cf/commands/application"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/formatters"
+	"github.com/tjarratt/cli/cf/models"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testcmd "github.com/tjarratt/cli/testhelpers/commands"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testreq "github.com/tjarratt/cli/testhelpers/requirements"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
+	testtime "github.com/tjarratt/cli/testhelpers/time"
 
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

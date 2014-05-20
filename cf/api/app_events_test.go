@@ -1,14 +1,14 @@
 package api_test
 
 import (
-	. "github.com/cloudfoundry/cli/cf/api"
-	"github.com/cloudfoundry/cli/cf/api/strategy"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/models"
-	"github.com/cloudfoundry/cli/cf/net"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testnet "github.com/cloudfoundry/cli/testhelpers/net"
-	testtime "github.com/cloudfoundry/cli/testhelpers/time"
+	. "github.com/tjarratt/cli/cf/api"
+	"github.com/tjarratt/cli/cf/api/strategy"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/models"
+	"github.com/tjarratt/cli/cf/net"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testnet "github.com/tjarratt/cli/testhelpers/net"
+	testtime "github.com/tjarratt/cli/testhelpers/time"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"net/http"

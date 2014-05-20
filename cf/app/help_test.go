@@ -1,14 +1,14 @@
 package app_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/api"
-	"github.com/cloudfoundry/cli/cf/app"
-	"github.com/cloudfoundry/cli/cf/command_factory"
-	"github.com/cloudfoundry/cli/cf/io_helpers"
-	"github.com/cloudfoundry/cli/cf/manifest"
-	"github.com/cloudfoundry/cli/cf/net"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	"github.com/tjarratt/cli/cf/api"
+	"github.com/tjarratt/cli/cf/app"
+	"github.com/tjarratt/cli/cf/command_factory"
+	"github.com/tjarratt/cli/cf/io_helpers"
+	"github.com/tjarratt/cli/cf/manifest"
+	"github.com/tjarratt/cli/cf/net"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	"github.com/codegangsta/cli"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

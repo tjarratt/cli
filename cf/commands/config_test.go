@@ -1,13 +1,13 @@
 package commands_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/configuration"
-	testcmd "github.com/cloudfoundry/cli/testhelpers/commands"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testreq "github.com/cloudfoundry/cli/testhelpers/requirements"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	"github.com/tjarratt/cli/cf/configuration"
+	testcmd "github.com/tjarratt/cli/testhelpers/commands"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testreq "github.com/tjarratt/cli/testhelpers/requirements"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 
-	. "github.com/cloudfoundry/cli/cf/commands"
+	. "github.com/tjarratt/cli/cf/commands"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

@@ -3,8 +3,8 @@ package app_files
 import (
 	"crypto/sha1"
 	"fmt"
-	"github.com/cloudfoundry/cli/cf/models"
-	cffileutils "github.com/cloudfoundry/cli/fileutils"
+	"github.com/tjarratt/cli/cf/models"
+	cffileutils "github.com/tjarratt/cli/fileutils"
 	"github.com/cloudfoundry/gofileutils/fileutils"
 	"io/ioutil"
 	"os"

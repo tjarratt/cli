@@ -1,7 +1,7 @@
 package net
 
 import (
-	"github.com/cloudfoundry/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf/terminal"
 )
 
 type warningsCollector struct {

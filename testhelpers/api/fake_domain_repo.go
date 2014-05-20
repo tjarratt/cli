@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/models"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/models"
 )
 
 type FakeDomainRepository struct {

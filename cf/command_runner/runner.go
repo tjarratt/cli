@@ -3,8 +3,8 @@ package command_runner
 import (
 	"errors"
 	"fmt"
-	"github.com/cloudfoundry/cli/cf/command_factory"
-	"github.com/cloudfoundry/cli/cf/requirements"
+	"github.com/tjarratt/cli/cf/command_factory"
+	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/codegangsta/cli"
 	"os"
 )

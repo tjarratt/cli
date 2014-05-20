@@ -1,7 +1,7 @@
 package matchers
 
 import (
-	"github.com/cloudfoundry/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/errors"
 	"github.com/onsi/gomega"
 )
 

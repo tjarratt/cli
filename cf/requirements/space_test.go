@@ -18,19 +18,19 @@
 
    For good examples of writing Ginkgo tests for the cli, refer to
 
-   src/github.com/cloudfoundry/cli/cf/commands/application/delete_app_test.go
-   src/github.com/cloudfoundry/cli/cf/terminal/ui_test.go
+   src/github.com/tjarratt/cli/cf/commands/application/delete_app_test.go
+   src/github.com/tjarratt/cli/cf/terminal/ui_test.go
    src/github.com/cloudfoundry/loggregator_consumer/consumer_test.go
 */
 
 package requirements_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/models"
-	. "github.com/cloudfoundry/cli/cf/requirements"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testassert "github.com/cloudfoundry/cli/testhelpers/assert"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	"github.com/tjarratt/cli/cf/models"
+	. "github.com/tjarratt/cli/cf/requirements"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testassert "github.com/tjarratt/cli/testhelpers/assert"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

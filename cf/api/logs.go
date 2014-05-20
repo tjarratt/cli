@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/cloudfoundry/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/configuration"
 	consumer "github.com/cloudfoundry/loggregator_consumer"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
 )

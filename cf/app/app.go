@@ -2,14 +2,15 @@ package app
 
 import (
 	"fmt"
-	"github.com/cloudfoundry/cli/cf"
-	"github.com/cloudfoundry/cli/cf/command_metadata"
-	"github.com/cloudfoundry/cli/cf/command_runner"
-	"github.com/cloudfoundry/cli/cf/terminal"
-	"github.com/cloudfoundry/cli/cf/trace"
-	"github.com/codegangsta/cli"
 	"strings"
 	"time"
+
+	"github.com/tjarratt/cli/cf"
+	"github.com/tjarratt/cli/cf/command_metadata"
+	"github.com/tjarratt/cli/cf/command_runner"
+	"github.com/tjarratt/cli/cf/terminal"
+	"github.com/tjarratt/cli/cf/trace"
+	cli "github.com/tjarratt/cg_cli"
 )
 
 var appHelpTemplate = `{{.Title "NAME:"}}

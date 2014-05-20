@@ -7,7 +7,7 @@ import (
 	"os"
 	"runtime"
 
-	. "github.com/cloudfoundry/cli/cf/trace"
+	. "github.com/tjarratt/cli/cf/trace"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

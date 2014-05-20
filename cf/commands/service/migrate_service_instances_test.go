@@ -1,19 +1,19 @@
 package service_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/api/resources"
-	. "github.com/cloudfoundry/cli/cf/commands/service"
-	"github.com/cloudfoundry/cli/cf/errors"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testcmd "github.com/cloudfoundry/cli/testhelpers/commands"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testreq "github.com/cloudfoundry/cli/testhelpers/requirements"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	"github.com/tjarratt/cli/cf/api/resources"
+	. "github.com/tjarratt/cli/cf/commands/service"
+	"github.com/tjarratt/cli/cf/errors"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testcmd "github.com/tjarratt/cli/testhelpers/commands"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testreq "github.com/tjarratt/cli/testhelpers/requirements"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	"github.com/codegangsta/cli"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("migrating service instances from v1 to v2", func() {

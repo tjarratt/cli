@@ -1,18 +1,18 @@
 package service_test
 
 import (
-	. "github.com/cloudfoundry/cli/cf/commands/service"
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/models"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
+	. "github.com/tjarratt/cli/cf/commands/service"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/models"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	testcmd "github.com/cloudfoundry/cli/testhelpers/commands"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
-	testreq "github.com/cloudfoundry/cli/testhelpers/requirements"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	testcmd "github.com/tjarratt/cli/testhelpers/commands"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
+	testreq "github.com/tjarratt/cli/testhelpers/requirements"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 )
 
 var _ = Describe("services", func() {

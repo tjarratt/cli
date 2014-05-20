@@ -1,7 +1,7 @@
 package strategy
 
 import (
-	"github.com/cloudfoundry/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/errors"
 	"strconv"
 	"strings"
 )

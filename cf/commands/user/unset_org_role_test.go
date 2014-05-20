@@ -18,25 +18,25 @@
 
    For good examples of writing Ginkgo tests for the cli, refer to
 
-   src/github.com/cloudfoundry/cli/cf/commands/application/delete_app_test.go
-   src/github.com/cloudfoundry/cli/cf/terminal/ui_test.go
+   src/github.com/tjarratt/cli/cf/commands/application/delete_app_test.go
+   src/github.com/tjarratt/cli/cf/terminal/ui_test.go
    src/github.com/cloudfoundry/loggregator_consumer/consumer_test.go
 */
 
 package user_test
 
 import (
-	. "github.com/cloudfoundry/cli/cf/commands/user"
-	"github.com/cloudfoundry/cli/cf/models"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testcmd "github.com/cloudfoundry/cli/testhelpers/commands"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testreq "github.com/cloudfoundry/cli/testhelpers/requirements"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	. "github.com/tjarratt/cli/cf/commands/user"
+	"github.com/tjarratt/cli/cf/models"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testcmd "github.com/tjarratt/cli/testhelpers/commands"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testreq "github.com/tjarratt/cli/testhelpers/requirements"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("Testing with ginkgo", func() {

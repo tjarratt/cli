@@ -1,8 +1,8 @@
 package command
 
 import (
-	"github.com/cloudfoundry/cli/cf/command_metadata"
-	"github.com/cloudfoundry/cli/cf/requirements"
+	"github.com/tjarratt/cli/cf/command_metadata"
+	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/codegangsta/cli"
 )
 

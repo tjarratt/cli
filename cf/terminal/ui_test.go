@@ -1,19 +1,19 @@
 package terminal_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/io_helpers"
-	"github.com/cloudfoundry/cli/cf/models"
-	. "github.com/cloudfoundry/cli/cf/terminal"
-	testassert "github.com/cloudfoundry/cli/testhelpers/assert"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/io_helpers"
+	"github.com/tjarratt/cli/cf/models"
+	. "github.com/tjarratt/cli/cf/terminal"
+	testassert "github.com/tjarratt/cli/testhelpers/assert"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"io"
 	"os"
 	"strings"
 
-	. "github.com/cloudfoundry/cli/testhelpers/matchers"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("UI", func() {

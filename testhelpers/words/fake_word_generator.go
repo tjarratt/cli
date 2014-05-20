@@ -1,7 +1,7 @@
 package words
 
 import (
-	real_words "github.com/cloudfoundry/cli/words"
+	real_words "github.com/tjarratt/cli/words"
 )
 
 type fakeWordGenerator struct {

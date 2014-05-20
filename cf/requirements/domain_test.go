@@ -1,14 +1,14 @@
 package requirements_test
 
 import (
-	"github.com/cloudfoundry/cli/cf/configuration"
-	"github.com/cloudfoundry/cli/cf/errors"
-	"github.com/cloudfoundry/cli/cf/models"
-	. "github.com/cloudfoundry/cli/cf/requirements"
-	testapi "github.com/cloudfoundry/cli/testhelpers/api"
-	testassert "github.com/cloudfoundry/cli/testhelpers/assert"
-	testconfig "github.com/cloudfoundry/cli/testhelpers/configuration"
-	testterm "github.com/cloudfoundry/cli/testhelpers/terminal"
+	"github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/errors"
+	"github.com/tjarratt/cli/cf/models"
+	. "github.com/tjarratt/cli/cf/requirements"
+	testapi "github.com/tjarratt/cli/testhelpers/api"
+	testassert "github.com/tjarratt/cli/testhelpers/assert"
+	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
+	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
