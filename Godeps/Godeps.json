@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/cloudfoundry/cli",
+	"ImportPath": "github.com/tjarratt/cli",
 	"GoVersion": "go1.2",
 	"Packages": [
 		"./cf/..."
@@ -40,11 +40,6 @@
 			"Rev": "b2f1c6577e09b5727076c72f4096e3cc5cfd737d"
 		},
 		{
-			"ImportPath": "github.com/codegangsta/cli",
-			"Comment": "1.0.0-65-g820deef",
-			"Rev": "820deefc9031d101f085ef773425fc6ca7a5363e"
-		},
-		{
 			"ImportPath": "github.com/gorilla/websocket",
 			"Rev": "10a95d14a3a215f5e2045d3dbbcd29f1ab209586"
 		},
@@ -59,6 +54,11 @@
 		{
 			"ImportPath": "github.com/onsi/gomega",
 			"Rev": "660b70079010c9eeeffdc381fcb3a8cde45ce495"
+		},
+		{
+			"ImportPath": "github.com/tjarratt/cg_cli",
+			"Comment": "1.0.0-66-g80f451b",
+			"Rev": "80f451b3b537e20c363ead9dd1e471ff231489f4"
 		}
 	]
 }
