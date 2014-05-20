@@ -2,6 +2,10 @@ package app_test
 
 import (
 	"bytes"
+	"strings"
+	"time"
+
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/command_factory"
@@ -11,14 +15,11 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testmanifest "github.com/tjarratt/cli/testhelpers/manifest"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	cli "github.com/tjarratt/cg_cli"
-	"strings"
-	"time"
 
-	. "github.com/tjarratt/cli/cf/app"
-	. "github.com/tjarratt/cli/testhelpers/matchers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/app"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var expectedCommandNames = []string{
@@ -38,7 +39,13 @@ var expectedCommandNames = []string{
 }
 
 var _ = Describe("App", func() {
-	It("#NewApp", func() {
+	var (
+		cmdRunner  *FakeRunner
+		cmdFactory command_factory.Factory
+		app        *cli.App
+	)
+
+	BeforeEach(func() {
 		ui := &testterm.FakeUI{}
 		config := testconfig.NewRepository()
 		manifestRepo := &testmanifest.FakeManifestRepository{}
@@ -49,28 +56,55 @@ var _ = Describe("App", func() {
 			"uaa":              net.NewUAAGateway(config),
 		})
 
-		cmdFactory := command_factory.NewFactory(ui, config, manifestRepo, repoLocator)
+		cmdFactory = command_factory.NewFactory(ui, config, manifestRepo, repoLocator)
 
 		metadatas := []command_metadata.CommandMetadata{}
 		for _, cmdName := range expectedCommandNames {
 			metadatas = append(metadatas, command_metadata.CommandMetadata{Name: cmdName})
 		}
 
-		for _, cmdName := range expectedCommandNames {
-			cmdRunner := &FakeRunner{cmdFactory: cmdFactory}
-			output := bytes.NewBuffer(make([]byte, 1024))
+		cmdRunner = &FakeRunner{cmdFactory: cmdFactory}
+
+	})
+
+	JustBeforeEach(func() {
+		app = NewApp(cmdRunner, cmdFactory.CommandMetadatas()...)
+	})
+
+	Describe("tracefile integration", func() {
+		var output *bytes.Buffer
+
+		BeforeEach(func() {
+			output = bytes.NewBuffer(make([]byte, 1024))
 			trace.SetStdout(output)
 			trace.EnableTrace()
+		})
 
-			app := NewApp(cmdRunner, cmdFactory.CommandMetadatas()...)
+		It("prints its version during its constructor", func() {
 			Expect(strings.Split(output.String(), "\n")).To(ContainSubstrings(
 				[]string{"VERSION:"},
 				[]string{cf.Version},
 			))
+		})
+	})
 
-			app.Run([]string{"", cmdName})
+	It("#NewApp", func() {
+		for _, cmdName := range expectedCommandNames {
+			app.Run([]string{"hey-look-ma-no-hands", cmdName})
 			Expect(cmdRunner.cmdName).To(Equal(cmdName))
 		}
+	})
+
+	Describe("autocorrect", func() {
+		It("will change halp to help", func() {
+			app.Run([]string{"scott-gcf", "halp", "me"})
+			Expect(cmdRunner.cmdName).To(Equal("help"))
+		})
+
+		It("passes the rest of the args to the correct command", func() {
+			app.Run([]string{"scott-gcf", "halp", "one", "two", "buckle mah shoe"})
+			Expect(cmdRunner.cmdArgs).To(Equal([]string{"one", "two", "buckle mah shoe"}))
+		})
 	})
 })
 

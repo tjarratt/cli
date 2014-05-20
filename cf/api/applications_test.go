@@ -13,10 +13,10 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testnet "github.com/tjarratt/cli/testhelpers/net"
 
-	. "github.com/tjarratt/cli/cf/api"
-	. "github.com/tjarratt/cli/testhelpers/matchers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/api"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("ApplicationsRepository", func() {

@@ -1,11 +1,11 @@
 package terminal_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/terminal"
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 )
 
 var _ = Describe("Table", func() {

@@ -1,6 +1,8 @@
 package application_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/application"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/errors"
@@ -16,8 +18,6 @@ import (
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	testwords "github.com/tjarratt/cli/testhelpers/words"
 	"github.com/tjarratt/cli/words"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"os"
 	"path/filepath"
 	"syscall"

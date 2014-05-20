@@ -2,8 +2,8 @@ package ui_helpers
 
 import (
 	"fmt"
-	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
+	"github.com/tjarratt/cli/cf/terminal"
 	"regexp"
 	"strings"
 	"time"

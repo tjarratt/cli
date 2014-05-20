@@ -1,13 +1,13 @@
 package commands_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"github.com/tjarratt/cli/cf/commands"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/models"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 )
 
 var _ = Describe("logout command", func() {

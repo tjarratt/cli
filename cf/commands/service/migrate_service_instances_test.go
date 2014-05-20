@@ -1,6 +1,9 @@
 package service_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/api/resources"
 	. "github.com/tjarratt/cli/cf/commands/service"
 	"github.com/tjarratt/cli/cf/errors"
@@ -9,9 +12,6 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	cli "github.com/tjarratt/cg_cli"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 )

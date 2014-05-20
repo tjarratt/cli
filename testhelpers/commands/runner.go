@@ -1,10 +1,10 @@
 package commands
 
 import (
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/command"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	cli "github.com/tjarratt/cg_cli"
 )
 
 var CommandDidPassRequirements bool

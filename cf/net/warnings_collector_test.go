@@ -1,12 +1,12 @@
 package net_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"github.com/tjarratt/cli/cf/net"
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 	testnet "github.com/tjarratt/cli/testhelpers/net"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 )
 
 var _ = Describe("WarningsCollector", func() {

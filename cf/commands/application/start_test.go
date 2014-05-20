@@ -26,6 +26,9 @@
 package application_test
 
 import (
+	"github.com/cloudfoundry/loggregatorlib/logmessage"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"github.com/tjarratt/cli/cf/api"
 	. "github.com/tjarratt/cli/cf/commands/application"
 	"github.com/tjarratt/cli/cf/configuration"
@@ -37,9 +40,6 @@ import (
 	testlogs "github.com/tjarratt/cli/testhelpers/logs"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	"github.com/cloudfoundry/loggregatorlib/logmessage"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"os"
 	"time"
 

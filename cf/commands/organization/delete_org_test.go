@@ -1,6 +1,8 @@
 package organization_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/organization"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/models"
@@ -9,8 +11,6 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 )

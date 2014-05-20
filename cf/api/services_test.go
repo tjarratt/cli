@@ -2,6 +2,8 @@ package api_test
 
 import (
 	"fmt"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/api/resources"
 	"github.com/tjarratt/cli/cf/configuration"
@@ -12,8 +14,6 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	"github.com/tjarratt/cli/testhelpers/maker"
 	testnet "github.com/tjarratt/cli/testhelpers/net"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"net/http"
 	"net/http/httptest"
 	"net/url"

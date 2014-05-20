@@ -3,10 +3,10 @@ package app_files_test
 import (
 	"archive/zip"
 	"bytes"
-	. "github.com/tjarratt/cli/cf/app_files"
 	"github.com/cloudfoundry/gofileutils/fileutils"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/app_files"
 	"io"
 	"io/ioutil"
 	"os"

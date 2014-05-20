@@ -1,6 +1,8 @@
 package application_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/application"
 	"github.com/tjarratt/cli/cf/configuration"
 	testapi "github.com/tjarratt/cli/testhelpers/api"
@@ -9,8 +11,6 @@ import (
 	"github.com/tjarratt/cli/testhelpers/maker"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 )

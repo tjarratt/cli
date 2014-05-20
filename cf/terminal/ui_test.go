@@ -1,14 +1,14 @@
 package terminal_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/io_helpers"
 	"github.com/tjarratt/cli/cf/models"
 	. "github.com/tjarratt/cli/cf/terminal"
 	testassert "github.com/tjarratt/cli/testhelpers/assert"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"io"
 	"os"
 	"strings"

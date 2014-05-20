@@ -26,6 +26,8 @@
 package serviceauthtoken_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/serviceauthtoken"
 	"github.com/tjarratt/cli/cf/models"
 	testapi "github.com/tjarratt/cli/testhelpers/api"
@@ -34,8 +36,6 @@ import (
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 )
 
 func callUpdateServiceAuthToken(args []string, requirementsFactory *testreq.FakeReqFactory, authTokenRepo *testapi.FakeAuthTokenRepo) (ui *testterm.FakeUI) {

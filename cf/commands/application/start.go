@@ -2,6 +2,8 @@ package application
 
 import (
 	"fmt"
+	"github.com/cloudfoundry/loggregatorlib/logmessage"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/command_metadata"
@@ -10,8 +12,6 @@ import (
 	"github.com/tjarratt/cli/cf/models"
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
-	"github.com/cloudfoundry/loggregatorlib/logmessage"
-	cli "github.com/tjarratt/cg_cli"
 	"os"
 	"regexp"
 	"strconv"

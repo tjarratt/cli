@@ -1,9 +1,9 @@
 package formatters_test
 
 import (
-	. "github.com/tjarratt/cli/cf/formatters"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/formatters"
 )
 
 var _ = Describe("bool formatting", func() {

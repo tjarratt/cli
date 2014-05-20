@@ -1,11 +1,11 @@
 package quota_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/quota"
 	"github.com/tjarratt/cli/cf/models"
 	. "github.com/tjarratt/cli/testhelpers/matchers"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 
 	"github.com/tjarratt/cli/cf/errors"
 	testapi "github.com/tjarratt/cli/testhelpers/api"

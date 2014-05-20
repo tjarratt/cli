@@ -2,9 +2,9 @@ package terminal
 
 import (
 	"fmt"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/configuration"
 	term "github.com/tjarratt/cli/cf/terminal"
-	cli "github.com/tjarratt/cg_cli"
 	"strings"
 	"time"
 )

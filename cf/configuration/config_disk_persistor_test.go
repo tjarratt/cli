@@ -26,10 +26,10 @@
 package configuration_test
 
 import (
-	. "github.com/tjarratt/cli/cf/configuration"
 	"github.com/cloudfoundry/gofileutils/fileutils"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/configuration"
 	"os"
 	"path/filepath"
 )

@@ -2,8 +2,8 @@ package matchers
 
 import (
 	"fmt"
-	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/onsi/gomega"
+	"github.com/tjarratt/cli/cf/terminal"
 	"strings"
 )
 

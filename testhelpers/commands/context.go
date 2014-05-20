@@ -3,6 +3,7 @@ package commands
 import (
 	"flag"
 	"fmt"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/app"
 	"github.com/tjarratt/cli/cf/command_factory"
@@ -12,7 +13,6 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	cli "github.com/tjarratt/cg_cli"
 	"strings"
 	"time"
 )

@@ -2,6 +2,7 @@ package command_factory
 
 import (
 	"errors"
+
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/command"
 	"github.com/tjarratt/cli/cf/command_metadata"
@@ -66,6 +67,7 @@ func NewFactory(ui terminal.UI, config configuration.ReadWriter, manifestRepo ma
 	factory.cmdsByName["events"] = application.NewEvents(ui, config, repoLocator.GetAppEventsRepository())
 	factory.cmdsByName["files"] = application.NewFiles(ui, config, repoLocator.GetAppFilesRepository())
 	factory.cmdsByName["login"] = commands.NewLogin(ui, config, repoLocator.GetAuthenticationRepository(), repoLocator.GetEndpointRepository(), repoLocator.GetOrganizationRepository(), repoLocator.GetSpaceRepository())
+	factory.cmdsByName["help"] = commands.NewHelp(ui)
 	factory.cmdsByName["logout"] = commands.NewLogout(ui, config)
 	factory.cmdsByName["logs"] = application.NewLogs(ui, config, repoLocator.GetLogsRepository())
 	factory.cmdsByName["marketplace"] = service.NewMarketplaceServices(ui, config, repoLocator.GetServiceRepository())

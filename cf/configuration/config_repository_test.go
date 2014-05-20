@@ -2,11 +2,11 @@ package configuration_test
 
 import (
 	"fmt"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/configuration"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	"github.com/tjarratt/cli/testhelpers/maker"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"time"
 )
 

@@ -34,9 +34,9 @@ import (
 	"net/http/httptest"
 	"time"
 
-	. "github.com/tjarratt/cli/cf/api"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/api"
 )
 
 var _ = Describe("AppSummaryRepository", func() {

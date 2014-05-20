@@ -1,9 +1,9 @@
 package manifest_test
 
 import (
-	. "github.com/tjarratt/cli/cf/manifest"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/manifest"
 	"path/filepath"
 )
 

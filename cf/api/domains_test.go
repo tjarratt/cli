@@ -1,6 +1,8 @@
 package api_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/api/strategy"
 	"github.com/tjarratt/cli/cf/configuration"
@@ -10,8 +12,6 @@ import (
 	testapi "github.com/tjarratt/cli/testhelpers/api"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testnet "github.com/tjarratt/cli/testhelpers/net"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"net/http"
 	"net/http/httptest"
 	"time"

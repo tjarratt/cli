@@ -1,10 +1,10 @@
 package requirements_test
 
 import (
-	"github.com/tjarratt/cli/cf/configuration"
-	. "github.com/tjarratt/cli/cf/requirements"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/tjarratt/cli/cf/configuration"
+	. "github.com/tjarratt/cli/cf/requirements"
 
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"

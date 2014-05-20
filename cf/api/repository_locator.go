@@ -2,11 +2,11 @@ package api
 
 import (
 	"crypto/tls"
+	consumer "github.com/cloudfoundry/loggregator_consumer"
 	"github.com/tjarratt/cli/cf/api/strategy"
 	"github.com/tjarratt/cli/cf/app_files"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/net"
-	consumer "github.com/cloudfoundry/loggregator_consumer"
 )
 
 type RepositoryLocator struct {

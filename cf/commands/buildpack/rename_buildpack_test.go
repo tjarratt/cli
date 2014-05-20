@@ -1,6 +1,8 @@
 package buildpack_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/buildpack"
 	"github.com/tjarratt/cli/cf/errors"
 	"github.com/tjarratt/cli/cf/models"
@@ -8,8 +10,6 @@ import (
 	testcmd "github.com/tjarratt/cli/testhelpers/commands"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 )

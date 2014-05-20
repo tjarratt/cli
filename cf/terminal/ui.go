@@ -2,10 +2,10 @@ package terminal
 
 import (
 	"fmt"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/trace"
-	cli "github.com/tjarratt/cg_cli"
 	"io"
 	"os"
 	"strings"

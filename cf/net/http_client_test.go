@@ -3,10 +3,10 @@ package net_test
 import (
 	"code.google.com/p/go.net/websocket"
 	"crypto/x509"
-	"github.com/tjarratt/cli/cf/errors"
-	. "github.com/tjarratt/cli/cf/net"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/tjarratt/cli/cf/errors"
+	. "github.com/tjarratt/cli/cf/net"
 	"net"
 	"net/http"
 	"net/url"

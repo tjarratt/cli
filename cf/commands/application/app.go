@@ -2,6 +2,7 @@ package application
 
 import (
 	"fmt"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/command_metadata"
 	"github.com/tjarratt/cli/cf/configuration"
@@ -11,7 +12,6 @@ import (
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/tjarratt/cli/cf/ui_helpers"
-	cli "github.com/tjarratt/cg_cli"
 	"strings"
 )
 

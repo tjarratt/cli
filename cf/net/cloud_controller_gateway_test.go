@@ -2,12 +2,12 @@ package net_test
 
 import (
 	"fmt"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/errors"
 	. "github.com/tjarratt/cli/cf/net"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"net/http"
 	"net/http/httptest"
 	"time"

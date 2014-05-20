@@ -1,6 +1,7 @@
 package application
 
 import (
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/command_metadata"
@@ -8,7 +9,6 @@ import (
 	"github.com/tjarratt/cli/cf/models"
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
-	cli "github.com/tjarratt/cg_cli"
 )
 
 type SetEnv struct {

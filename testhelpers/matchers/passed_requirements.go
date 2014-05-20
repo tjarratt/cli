@@ -1,8 +1,8 @@
 package matchers
 
 import (
-	"github.com/tjarratt/cli/cf/errors"
 	"github.com/onsi/gomega"
+	"github.com/tjarratt/cli/cf/errors"
 )
 
 type havePassedRequirementsMatcher struct{}

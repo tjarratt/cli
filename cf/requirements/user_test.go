@@ -26,13 +26,13 @@
 package requirements_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"github.com/tjarratt/cli/cf/models"
 	. "github.com/tjarratt/cli/cf/requirements"
 	testapi "github.com/tjarratt/cli/testhelpers/api"
 	testassert "github.com/tjarratt/cli/testhelpers/assert"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 )

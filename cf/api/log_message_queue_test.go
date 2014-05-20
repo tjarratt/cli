@@ -3,10 +3,10 @@ package api_test
 import (
 	"code.google.com/p/gogoprotobuf/proto"
 	"fmt"
-	. "github.com/tjarratt/cli/cf/api"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/api"
 	"time"
 )
 

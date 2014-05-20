@@ -11,10 +11,10 @@ import (
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 
-	. "github.com/tjarratt/cli/cf/commands/space"
-	. "github.com/tjarratt/cli/testhelpers/matchers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/commands/space"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("create-space command", func() {

@@ -2,17 +2,17 @@ package api_test
 
 import (
 	"code.google.com/p/gogoprotobuf/proto"
+	"github.com/cloudfoundry/loggregator_consumer"
+	"github.com/cloudfoundry/loggregatorlib/logmessage"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/errors"
 	testapi "github.com/tjarratt/cli/testhelpers/api"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
-	"github.com/cloudfoundry/loggregator_consumer"
-	"github.com/cloudfoundry/loggregatorlib/logmessage"
 	"time"
 
-	. "github.com/tjarratt/cli/cf/api"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/api"
 )
 
 var _ = Describe("loggregator logs repository", func() {

@@ -10,9 +10,9 @@ import (
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 
-	"github.com/tjarratt/cli/cf/models"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/tjarratt/cli/cf/models"
 )
 
 var _ = Describe("app Command", func() {

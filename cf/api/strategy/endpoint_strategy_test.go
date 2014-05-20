@@ -1,10 +1,10 @@
 package strategy_test
 
 import (
-	"github.com/tjarratt/cli/cf/api/resources"
-	. "github.com/tjarratt/cli/cf/api/strategy"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/tjarratt/cli/cf/api/resources"
+	. "github.com/tjarratt/cli/cf/api/strategy"
 )
 
 var _ = Describe("EndpointStrategy", func() {

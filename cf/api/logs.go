@@ -5,9 +5,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/tjarratt/cli/cf/configuration"
 	consumer "github.com/cloudfoundry/loggregator_consumer"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
+	"github.com/tjarratt/cli/cf/configuration"
 )
 
 type LogsRepository interface {

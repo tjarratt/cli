@@ -1,10 +1,10 @@
 package configuration_test
 
 import (
-	. "github.com/tjarratt/cli/cf/configuration"
-	"github.com/tjarratt/cli/cf/models"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/configuration"
+	"github.com/tjarratt/cli/cf/models"
 	"regexp"
 )
 

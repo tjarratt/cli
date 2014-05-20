@@ -1,13 +1,13 @@
 package serviceauthtoken_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/serviceauthtoken"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/errors"
 	"github.com/tjarratt/cli/cf/models"
 	testapi "github.com/tjarratt/cli/testhelpers/api"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 
 	testcmd "github.com/tjarratt/cli/testhelpers/commands"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"

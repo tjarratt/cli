@@ -2,10 +2,10 @@ package resources_test
 
 import (
 	"encoding/json"
-	. "github.com/tjarratt/cli/cf/api/resources"
-	testtime "github.com/tjarratt/cli/testhelpers/time"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/api/resources"
+	testtime "github.com/tjarratt/cli/testhelpers/time"
 )
 
 var _ = Describe("Event resources", func() {

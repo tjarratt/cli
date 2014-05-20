@@ -7,9 +7,9 @@ import (
 	"os"
 	"runtime"
 
-	. "github.com/tjarratt/cli/cf/trace"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/trace"
 )
 
 var _ = Describe("trace logger", func() {

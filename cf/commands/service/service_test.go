@@ -26,10 +26,10 @@
 package service_test
 
 import (
-	. "github.com/tjarratt/cli/cf/commands/service"
-	"github.com/tjarratt/cli/cf/models"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/commands/service"
+	"github.com/tjarratt/cli/cf/models"
 
 	testcmd "github.com/tjarratt/cli/testhelpers/commands"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"

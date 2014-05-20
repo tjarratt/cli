@@ -2,6 +2,7 @@ package service
 
 import (
 	"fmt"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/api/resources"
 	"github.com/tjarratt/cli/cf/command_metadata"
@@ -9,7 +10,6 @@ import (
 	"github.com/tjarratt/cli/cf/errors"
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
-	cli "github.com/tjarratt/cg_cli"
 )
 
 type MigrateServiceInstances struct {

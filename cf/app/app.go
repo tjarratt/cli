@@ -2,15 +2,19 @@ package app
 
 import (
 	"fmt"
+	"os"
 	"strings"
+	"text/tabwriter"
+	"text/template"
 	"time"
 
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/command_metadata"
 	"github.com/tjarratt/cli/cf/command_runner"
+	"github.com/tjarratt/cli/cf/help"
 	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/tjarratt/cli/cf/trace"
-	cli "github.com/tjarratt/cg_cli"
 )
 
 var appHelpTemplate = `{{.Title "NAME:"}}
@@ -42,6 +46,16 @@ var appHelpTemplate = `{{.Title "NAME:"}}
    --help, -h                         Show help
 `
 
+func showAppHelp(helpTemplate string, appToPrint interface{}) {
+	app := appToPrint.(*cli.App)
+	presenter := help.NewAppPresenter(app)
+
+	w := tabwriter.NewWriter(os.Stdout, 0, 8, 1, '\t', 0)
+	t := template.Must(template.New("help").Parse(helpTemplate))
+	t.Execute(w, presenter)
+	w.Flush()
+}
+
 func NewApp(cmdRunner command_runner.Runner, metadatas ...command_metadata.CommandMetadata) (app *cli.App) {
 	helpCommand := cli.Command{
 		Name:        "help",
@@ -49,12 +63,8 @@ func NewApp(cmdRunner command_runner.Runner, metadatas ...command_metadata.Comma
 		Description: "Show help",
 		Usage:       fmt.Sprintf("%s help [COMMAND]", cf.Name()),
 		Action: func(c *cli.Context) {
-			args := c.Args()
-			if len(args) > 0 {
-				cli.ShowCommandHelp(c, args[0])
-			} else {
-				showAppHelp(appHelpTemplate, c.App)
-			}
+			cmdRunner.RunCmdByName("help", c)
+			return
 		},
 	}
 	cli.HelpPrinter = showAppHelp
@@ -81,6 +91,21 @@ func NewApp(cmdRunner command_runner.Runner, metadatas ...command_metadata.Comma
 	for _, metadata := range metadatas {
 		app.Commands = append(app.Commands, getCommand(metadata, cmdRunner))
 	}
+
+	app.UnknownCommandCalled = func(context *cli.Context) {
+		// look at the arg that was passed in
+		// look at all of app's commands and pick the one with the smallest levenstein distance
+		// TODO: figure out how we get back here ? maybe recurse back to App.Run() with args????
+		args := context.Args()
+		unknownCommandName := args[0]
+
+		if unknownCommandName == "halp" {
+			// count := len(args)-1
+			// newArgs = append(newArgs, args[1...count]...))
+			app.Run([]string{"fakery", "help", "help"})
+		}
+	}
+
 	return
 }
 

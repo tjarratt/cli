@@ -2,6 +2,7 @@ package service
 
 import (
 	"encoding/json"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/command_metadata"
@@ -9,7 +10,6 @@ import (
 	"github.com/tjarratt/cli/cf/flag_helpers"
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
-	cli "github.com/tjarratt/cg_cli"
 )
 
 type UpdateUserProvidedService struct {

@@ -26,6 +26,8 @@
 package servicebroker_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	. "github.com/tjarratt/cli/cf/commands/servicebroker"
 	testapi "github.com/tjarratt/cli/testhelpers/api"
 	testcmd "github.com/tjarratt/cli/testhelpers/commands"
@@ -33,8 +35,6 @@ import (
 	. "github.com/tjarratt/cli/testhelpers/matchers"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 )
 
 var _ = Describe("Testing with ginkgo", func() {

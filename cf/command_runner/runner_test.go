@@ -1,14 +1,14 @@
 package command_runner_test
 
 import (
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/command"
 	"github.com/tjarratt/cli/cf/command_metadata"
 	. "github.com/tjarratt/cli/cf/command_runner"
 	"github.com/tjarratt/cli/cf/requirements"
 	testcmd "github.com/tjarratt/cli/testhelpers/commands"
-	cli "github.com/tjarratt/cg_cli"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 )
 
 type TestCommandFactory struct {

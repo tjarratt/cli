@@ -26,9 +26,9 @@
 package configuration_test
 
 import (
-	. "github.com/tjarratt/cli/cf/configuration"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/configuration"
 )
 
 var _ = Describe("Testing with ginkgo", func() {

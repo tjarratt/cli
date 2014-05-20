@@ -1,9 +1,9 @@
 package terminal_test
 
 import (
-	. "github.com/tjarratt/cli/cf/terminal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/terminal"
 	"os"
 	"runtime"
 )

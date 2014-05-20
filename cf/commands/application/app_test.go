@@ -13,9 +13,9 @@ import (
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
 	testtime "github.com/tjarratt/cli/testhelpers/time"
 
-	. "github.com/tjarratt/cli/testhelpers/matchers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/testhelpers/matchers"
 )
 
 var _ = Describe("app Command", func() {

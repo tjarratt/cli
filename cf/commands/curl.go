@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/command_metadata"
 	"github.com/tjarratt/cli/cf/configuration"
@@ -11,7 +12,6 @@ import (
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/tjarratt/cli/cf/trace"
-	cli "github.com/tjarratt/cg_cli"
 	"strings"
 )
 

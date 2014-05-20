@@ -2,8 +2,8 @@ package app_files
 
 import (
 	"archive/zip"
-	"github.com/tjarratt/cli/cf/errors"
 	"github.com/cloudfoundry/gofileutils/fileutils"
+	"github.com/tjarratt/cli/cf/errors"
 	"os"
 	"path/filepath"
 )

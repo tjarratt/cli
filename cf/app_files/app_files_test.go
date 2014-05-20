@@ -1,8 +1,8 @@
 package app_files_test
 
 import (
-	. "github.com/tjarratt/cli/cf/app_files"
 	"github.com/cloudfoundry/gofileutils/fileutils"
+	. "github.com/tjarratt/cli/cf/app_files"
 	"os"
 	"path/filepath"
 

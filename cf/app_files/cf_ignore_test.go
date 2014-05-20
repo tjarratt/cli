@@ -1,9 +1,9 @@
 package app_files_test
 
 import (
-	. "github.com/tjarratt/cli/cf/app_files"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/app_files"
 )
 
 var _ = Describe("CF Ignore", func() {

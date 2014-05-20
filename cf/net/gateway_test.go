@@ -28,6 +28,8 @@ package net_test
 import (
 	"crypto/tls"
 	"fmt"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/api"
 	"github.com/tjarratt/cli/cf/configuration"
@@ -35,8 +37,6 @@ import (
 	. "github.com/tjarratt/cli/cf/net"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testnet "github.com/tjarratt/cli/testhelpers/net"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"

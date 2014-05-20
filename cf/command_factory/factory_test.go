@@ -1,9 +1,9 @@
 package command_factory_test
 
 import (
-	. "github.com/tjarratt/cli/cf/command_factory"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	. "github.com/tjarratt/cli/cf/command_factory"
 	"os"
 	"path/filepath"
 	"strings"
