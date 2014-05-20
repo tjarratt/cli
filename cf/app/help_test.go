@@ -9,7 +9,7 @@ import (
 	"github.com/tjarratt/cli/cf/net"
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"strings"

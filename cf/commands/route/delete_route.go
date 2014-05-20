@@ -8,7 +8,7 @@ import (
 	"github.com/tjarratt/cli/cf/flag_helpers"
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 )
 
 type DeleteRoute struct {

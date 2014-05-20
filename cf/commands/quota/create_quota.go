@@ -10,7 +10,7 @@ import (
 	"github.com/tjarratt/cli/cf/models"
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 
 	"github.com/tjarratt/cli/cf/i18n"
 

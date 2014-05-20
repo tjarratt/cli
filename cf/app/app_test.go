@@ -11,7 +11,7 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testmanifest "github.com/tjarratt/cli/testhelpers/manifest"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 	"strings"
 	"time"
 

@@ -1,9 +1,9 @@
 package command
 
 import (
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/command_metadata"
 	"github.com/tjarratt/cli/cf/requirements"
-	"github.com/codegangsta/cli"
 )
 
 type Command interface {

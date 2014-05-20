@@ -4,7 +4,7 @@ import (
 	"github.com/tjarratt/cli/cf/command"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 )
 
 var CommandDidPassRequirements bool

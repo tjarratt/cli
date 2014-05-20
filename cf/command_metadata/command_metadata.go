@@ -1,6 +1,6 @@
 package command_metadata
 
-import "github.com/codegangsta/cli"
+import cli "github.com/tjarratt/cg_cli"
 
 type CommandMetadata struct {
 	Name            string

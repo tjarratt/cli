@@ -11,7 +11,7 @@ import (
 	"github.com/tjarratt/cli/cf/terminal"
 	"github.com/tjarratt/cli/cf/ui_helpers"
 	"github.com/cloudfoundry/loggregatorlib/logmessage"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 	"time"
 )
 

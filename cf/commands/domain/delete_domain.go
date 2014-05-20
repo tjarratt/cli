@@ -7,7 +7,7 @@ import (
 	"github.com/tjarratt/cli/cf/errors"
 	"github.com/tjarratt/cli/cf/requirements"
 	"github.com/tjarratt/cli/cf/terminal"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 )
 
 type DeleteDomain struct {

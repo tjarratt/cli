@@ -3,10 +3,11 @@ package command_runner
 import (
 	"errors"
 	"fmt"
+	"os"
+
+	cli "github.com/tjarratt/cg_cli"
 	"github.com/tjarratt/cli/cf/command_factory"
 	"github.com/tjarratt/cli/cf/requirements"
-	"github.com/codegangsta/cli"
-	"os"
 )
 
 type Runner interface {

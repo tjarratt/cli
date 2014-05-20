@@ -5,7 +5,7 @@ import (
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/configuration"
 	"github.com/tjarratt/cli/cf/trace"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 	"io"
 	"os"
 	"strings"

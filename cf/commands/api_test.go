@@ -11,7 +11,7 @@ import (
 	testconfig "github.com/tjarratt/cli/testhelpers/configuration"
 	testreq "github.com/tjarratt/cli/testhelpers/requirements"
 	testterm "github.com/tjarratt/cli/testhelpers/terminal"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

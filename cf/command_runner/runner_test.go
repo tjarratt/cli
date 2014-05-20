@@ -6,7 +6,7 @@ import (
 	. "github.com/tjarratt/cli/cf/command_runner"
 	"github.com/tjarratt/cli/cf/requirements"
 	testcmd "github.com/tjarratt/cli/testhelpers/commands"
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

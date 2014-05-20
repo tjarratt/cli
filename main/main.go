@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/codegangsta/cli"
+	cli "github.com/tjarratt/cg_cli"
 
 	"github.com/tjarratt/cli/cf"
 	"github.com/tjarratt/cli/cf/api"
