@@ -105,6 +105,11 @@ var _ = Describe("App", func() {
 			app.Run([]string{"scott-gcf", "halp", "one", "two", "buckle mah shoe"})
 			Expect(cmdRunner.cmdArgs).To(Equal([]string{"one", "two", "buckle mah shoe"}))
 		})
+
+		It("will change jalp to help", func() {
+			app.Run([]string{"scott-gcf", "jalp", "help"})
+			Expect(cmdRunner.cmdName).To(Equal("help"))
+		})
 	})
 })
 

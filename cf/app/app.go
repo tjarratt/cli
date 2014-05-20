@@ -99,7 +99,17 @@ func NewApp(cmdRunner command_runner.Runner, metadatas ...command_metadata.Comma
 		args := context.Args()
 		unknownCommandName := args[0]
 
-		if unknownCommandName == "halp" {
+		cmdName := ""
+		distance := 2 ^ 31
+		for _, metadata := range metadatas {
+			lDist := levenshteinDistance(unknownCommandName, metadata.Name)
+			if lDist < distance {
+				cmdName = metadata.Name
+				distance = lDist
+			}
+		}
+
+		if cmdName != "" {
 			newArgs := []string{"great-scott-cf!", "help"}
 			count := len(args)
 			if count > 0 {
@@ -111,6 +121,45 @@ func NewApp(cmdRunner command_runner.Runner, metadatas ...command_metadata.Comma
 	}
 
 	return
+}
+
+var memoizer = map[string]int{}
+
+func levenshteinDistance(first, second string) int {
+	key := strings.Join([]string{first, second}, "__")
+	if val, ok := memoizer[key]; ok {
+		return val
+	}
+
+	if len(first) == 0 {
+		memoizer[key] = len(second)
+		return len(second)
+	}
+
+	if len(second) == 0 {
+		memoizer[key] = len(first)
+		return len(first)
+	}
+
+	distance := 0
+	if first[len(first)-1] != second[len(second)-1] {
+		distance = 1
+	}
+
+	// return min of delete rune from first, delete rune from t, and delete a rune from both
+	first_sub := levenshteinDistance(first[0:len(first)-1], second) + 1
+	second_sub := levenshteinDistance(first, second[0:len(second)-1]) + 1
+	both_sub := levenshteinDistance(first[0:len(first)-1], second[0:len(second)-1]) + distance
+
+	min := 2 ^ 31
+	for _, cost := range []int{first_sub, second_sub, both_sub} {
+		if cost < min {
+			min = cost
+		}
+	}
+
+	memoizer[key] = min
+	return min
 }
 
 func getCommand(metadata command_metadata.CommandMetadata, runner command_runner.Runner) cli.Command {
